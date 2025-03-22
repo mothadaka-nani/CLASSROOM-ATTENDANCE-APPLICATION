@@ -257,3 +257,30 @@ td {
     transform: scale(1.05);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 18px;
+    }
+    .logout-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 7px;
+    }
+    input, select, button {
+        font-size: 12px;
+        padding: 8px;
+    }
+    .container {
+        padding: 10px;
+    }
+    .student-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 8px;
+    }
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
