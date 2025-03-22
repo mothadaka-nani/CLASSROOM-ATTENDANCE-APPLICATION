@@ -17,7 +17,7 @@ function checkLogin() {
 // Logout Function
 function logout() {
     localStorage.removeItem("isLoggedIn");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
 
 // Add a new student to the class
