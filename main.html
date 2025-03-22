@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body onload="checkLogin()">
+    <header>
+        <h1>Attendance Management System</h1>
+        <button onclick="logout()" class="logout-btn">Logout</button>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Add New Student Section -->
+            <h2>Add New Student</h2>
+            <div class="add-student-section">
+                <input type="text" id="newStudentName" placeholder="Enter student name">
+                <button onclick="addNewStudent()">Add Student</button>
+            </div>
+
+            <!-- Remove Student Button -->
+            <button onclick="toggleStudentList()" class="remove-student-btn">Remove Student</button>
+
+            <!-- Student List Section (hidden by default) -->
+            <div id="studentList" style="display: none;">
+                <!-- Student list will be dynamically populated here -->
+            </div>
+
+            <!-- Mark Attendance Section -->
+            <h2>Mark Attendance</h2>
+            <label>Select Date:</label>
+            <input type="date" id="attendanceDate" max="" onchange="loadStudentList()">
+
+            <div id="studentListContainer"></div>
+            <button onclick="saveAttendance()">Save Attendance</button>
+
+            <!-- Edit Attendance -->
+            <h2>Edit Attendance</h2>
+            <label>Select Student:</label>
+            <select id="studentSelect" onchange="loadStudentAttendance()">
+                <option value="" disabled selected>Select a Student</option>
+            </select>
+            <button onclick="saveEditedAttendance()" class="save-btn">Save</button>
+
+            <div id="attendanceHistoryContainer"></div>
+
+            <!-- Attendance Records -->
+            <h2>Attendance Records</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Attendance %</th>
+                    </tr>
+                </thead>
+                <tbody id="attendanceTable"></tbody>
+            </table>
+
+            <!-- View Attendance Graph Button -->
+            <button onclick="window.location.href='graph.html'" class="graph-btn">View Attendance Graph</button>
+
+            <!-- Download CSV Button -->
+            <button onclick="downloadCSV()" class="download-btn">Download CSV</button>
+        </div>
+        <button onclick="clearAttendance()" class="clear-btn">Clear Attendance Data</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

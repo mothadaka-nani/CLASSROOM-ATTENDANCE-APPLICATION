@@ -1,0 +1,259 @@
+/* Professional University Theme */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #003366; /* Dark blue header */
+    color: #ffffff; /* White text */
+    padding: 1.5rem;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+/* Radio Group Styling */
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between radio buttons */
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.radio-group label {
+    font-weight: bold;
+    flex: 1;
+}
+
+.radio-group input[type="radio"] {
+    margin: 0 5px; /* Space between radio button and label */
+}
+
+/* Radio Button Labels */
+.radio-group .radio-label {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between radio button and label */
+}
+/* Logout Button */
+.logout-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: #ffffff; /* White button */
+    color: #003366; /* Dark blue text */
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.logout-btn:hover {
+    background: #e6e6e6; /* Light gray on hover */
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+/* Main Container */
+.container {
+    background: #ffffff; /* White container */
+    padding: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Inputs, Selects & Buttons */
+input, select, button {
+    width: 95%;
+    padding: 14px;
+    margin: 14px 0;
+    border: 2px solid #003366; /* Dark blue border */
+    border-radius: 8px;
+    font-size: 16px;
+    background: #ffffff; /* White background */
+    color: #333; /* Dark gray text */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #ffcc00; /* Gold border on focus */
+    box-shadow: 0px 6px 12px rgba(255, 204, 0, 0.3); /* Stronger shadow */
+}
+
+button {
+    background: #003366; /* Dark blue button */
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background: #002244; /* Darker blue on hover */
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+/* Student List */
+.student-item {
+    width: 90%;
+    background: #ffffff; /* White background */
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #003366; /* Dark blue border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.student-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+/* Remove Button */
+.remove-btn {
+    background: #d9534f; /* Red button */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.remove-btn:hover {
+    background: #c9302c; /* Darker red on hover */
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+/* Save Button */
+.save-btn {
+    background: #43a047; /* Green button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.save-btn:hover {
+    background: #388e3c; /* Darker green on hover */
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background: #ffffff; /* White background */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+th, td {
+    border: 2px solid #003366; /* Dark blue border */
+    padding: 14px;
+    text-align: center;
+    font-size: 16px;
+}
+
+th {
+    background: #003366; /* Dark blue header */
+    color: #ffffff; /* White text */
+}
+
+td {
+    color: #333; /* Dark gray text */
+}
+
+/* Download Button */
+.download-btn {
+    background: #43a047; /* Green button */
+    color: white;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 25px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.download-btn:hover {
+    background: #388e3c; /* Darker green on hover */
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+/* Clear Attendance Button */
+.clear-btn {
+    background: #d9534f; /* Red button */
+    color: white;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 25px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.clear-btn:hover {
+    background: #c9302c; /* Darker red on hover */
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+/* Remove Student Button */
+.remove-student-btn {
+    background: #d9534f; /* Red button */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.remove-student-btn:hover {
+    background: #c9302c; /* Darker red on hover */
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Graph</title>
+    <link rel="stylesheet" href="style2.css">
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body onload="renderAttendanceGraph()">
+    <!-- Navigation Bar with Big Title -->
+    <nav>
+        <h1>Attendance Graph</h1>
+        <button onclick="window.location.href='main.html'" class="back-btn">Back</button>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="graph-container">
+            <!-- Big Attendance Graph -->
+            <canvas id="attendanceChart"></canvas>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

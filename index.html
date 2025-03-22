@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Login</title>
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Login Container */
+.login-container {
+    background-color: #ffffff; /* White background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;
+    max-width: 400px; /* Limit width for better readability */
+    text-align: center;
+}
+
+/* Login Title */
+.login-container h2 {
+    font-size: 24px;
+    color: #003366; /* Dark blue text */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Input Fields */
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd; /* Light gray border */
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-container input:focus {
+    border-color: #003366; /* Dark blue border on focus */
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3); /* Soft blue glow */
+}
+
+/* Login Button */
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #003366; /* Dark blue button */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #002244; /* Darker blue on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Error Message */
+.login-container .error {
+    color: #d9534f; /* Red text for error messages */
+    font-size: 14px;
+    margin-top: 10px;
+    display: none; /* Hidden by default */
+}
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Teacher Login</h2>
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+        <p id="errorMessage" class="error"></p>
+    </div>
+
+    <script>
+        function login() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username === "teacher" && password === "admin123") {
+                localStorage.setItem("isLoggedIn", true);
+                window.location.href = "main.html"; // Redirect to main page
+            } else {
+                document.getElementById("errorMessage").innerText = "Invalid credentials!";
+            }
+        }
+    </script>
+</body>
+</html>
