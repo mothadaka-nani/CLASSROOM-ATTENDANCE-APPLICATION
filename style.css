@@ -51,16 +51,16 @@ header {
 /* Logout Button */
 .logout-btn {
     position: absolute;
-    top: 15px;
+    top: 5px;
     right: 20px;
-    background: #ffffff; /* White button */
-    color: #003366; /* Dark blue text */
+    background: #b71616; /* White button */
+    color: #ffffff; /* Dark blue text */
     border: none;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 10px;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -70,8 +70,8 @@ header {
 }
 
 .logout-btn:hover {
-    background: #e6e6e6; /* Light gray on hover */
-    transform: scale(1.1);
+    background: #760d0d; /* Light gray on hover */
+    transform: scale(1.2);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow */
 }
 
