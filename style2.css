@@ -77,3 +77,20 @@ nav h1 {
     width: 100% !important;
     height: 100% !important; /* Fill the container */
 }
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    nav h1 {
+        font-size: 22px;
+    }
+    .back-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+        top: 10px;
+        right: 10px;
+    }
+    .graph-container {
+        width: 90vw;
+        height: 30vh;
+        padding: 10px;
+    }
+}
